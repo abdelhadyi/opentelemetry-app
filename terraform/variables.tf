@@ -11,7 +11,7 @@ variable "vpc_cidr" {
 }
 
 variable "public_cidrs" {
-   description = "CIDRs of the two public subnets"
+   description = "my two public subnets"
    type        = list(string)
    default     = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
 }

@@ -7,6 +7,7 @@ module "aws" {
    availability_zones = var.availability_zones
 }
 
+
 module "eks" {
    source    	      = "./modules/eks"
    cluster_name       = var.cluster_name
