@@ -95,8 +95,7 @@ jobs:
         token: ${{ secrets.GH-TOKEN }}
 
     - name: sed
-      run: sed -i "s|image: .*|image: ${{ vars.DOCKERHUB_USERNAME }}/product-catalog:${{ github.run_id }}|g" deploy.yaml
-      working-directory: kubernetes/productcatalog
+      run: sed -i "s|image: .*|image: ${{ vars.DOCKERHUB_USERNAME }}/product-catalog:${{ github.run_id }}|g" kubernetes/productcatalog/deploy.yaml
 
     - name: GIT
       run: |
