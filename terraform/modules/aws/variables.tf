@@ -1,5 +1,5 @@
 variable "cluster_name" {
-   default 	= "first-cluster"
+   default 	= "taskflow-app-cluster"
    description = "Name of Cluster"
    type		= string
 }
